@@ -1,0 +1,27 @@
+#!/usr/bin/env ruby
+#^syntax detection
+
+site 'http://community.opscode.com/api/v1'
+
+cookbook 'chef-client'
+
+cookbook 'apt',
+  :git => 'git://github.com/opscode-cookbooks/apt.git'
+
+cookbook 'build-essential',
+  :git => 'git://github.com/opscode-cookbooks/build-essential.git'
+
+cookbook 'git',
+  :git => 'git://github.com/opscode-cookbooks/git.git'
+
+cookbook 'postgresql',
+  :git => 'git://github.com/opscode-cookbooks/postgresql.git'
+
+cookbook 'java',
+  :git => 'git://github.com/opscode-cookbooks/java.git'
+
+cookbook 'zsh',
+  :git => 'git://github.com/opscode-cookbooks/zsh.git'
+
+cookbook 'vim',
+  :git => 'git://github.com/opscode-cookbooks/vim.git'
