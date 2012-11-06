@@ -14,11 +14,14 @@ cookbook 'build-essential',
 cookbook 'git',
   :git => 'git://github.com/opscode-cookbooks/git.git'
 
-cookbook 'postgresql',
-  :git => 'git://github.com/opscode-cookbooks/postgresql.git'
-
 cookbook 'java',
   :git => 'git://github.com/opscode-cookbooks/java.git'
+
+cookbook 'mysql',
+  :git => 'git://github.com/opscode-cookbooks/mysql.git'
+
+cookbook 'postgresql',
+  :git => 'git://github.com/opscode-cookbooks/postgresql.git'
 
 cookbook 'zsh',
   :git => 'git://github.com/opscode-cookbooks/zsh.git'

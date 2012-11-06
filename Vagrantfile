@@ -7,11 +7,6 @@ Vagrant::Config.run do |config|
 
   config.vm.provision :chef_solo do |chef|
     chef.cookbooks_path = "cookbooks"
-    chef.add_recipe("apt")
-    chef.add_recipe("build-essential")
-    chef.add_recipe("git")
-    chef.add_recipe("postgresql::client")
-    chef.add_recipe("postgresql::server")
 
     chef.json = {
       :java => {
@@ -23,7 +18,14 @@ Vagrant::Config.run do |config|
       }
     }
 
+    chef.add_recipe("apt")
+    chef.add_recipe("build-essential")
+    chef.add_recipe("git")
     chef.add_recipe("java")
+    chef.add_recipe("mysql::client")
+    chef.add_recipe("mysql::server")
+    chef.add_recipe("postgresql::client")
+    chef.add_recipe("postgresql::server")
     chef.add_recipe("zsh")
     chef.add_recipe("vim")
   end
