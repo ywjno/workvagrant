@@ -5,7 +5,7 @@ task :up do
   system "vagrant up"
 end
 
-desc "vagrant down"
+desc "vagrant halt"
 task :down do
   system "vagrant halt"
 end
@@ -15,12 +15,12 @@ task :reload do
   system "vagrant reload"
 end
 
-desc "install all cookbooks"
-task :install do
+desc "install all chef"
+task :install_chef do
   system "librarian-chef install"
 end
 
-desc "update all cookbooks"
-task :update do
+desc "update all chef"
+task :update_chef do
   system "librarian-chef update"
 end
