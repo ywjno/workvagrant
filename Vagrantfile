@@ -15,6 +15,11 @@ Vagrant::Config.run do |config|
         :oracle => {
           "accept_oracle_download_terms" => true
         }
+      },
+      :mysql => {
+        :server_root_password => "PASSWORD",
+        :server_repl_password => "PASSWORD",
+        :server_debian_password => "PASSWORD"
       }
     }
 
