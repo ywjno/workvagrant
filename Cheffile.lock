@@ -1,0 +1,85 @@
+SITE
+  remote: http://community.opscode.com/api/v1
+  specs:
+    chef_handler (1.1.2)
+    dmg (1.1.0)
+    openssl (1.0.0)
+    runit (0.16.2)
+    windows (1.7.0)
+      chef_handler (>= 0.0.0)
+    yum (2.0.6)
+
+GIT
+  remote: git://github.com/opscode-cookbooks/apt.git
+  ref: master
+  sha: ea834265247cc8b507ac37ab3a34a9b44ed27a11
+  specs:
+    apt (1.7.0)
+
+GIT
+  remote: git://github.com/opscode-cookbooks/build-essential.git
+  ref: master
+  sha: 0c636536fb1236f792974f3af38f2950a03ed4b2
+  specs:
+    build-essential (1.3.2)
+
+GIT
+  remote: git://github.com/opscode-cookbooks/git.git
+  ref: master
+  sha: f971753d7bac72c4decf2dddda8f9be5289ae324
+  specs:
+    git (2.1.2)
+      build-essential (>= 0.0.0)
+      dmg (>= 0.0.0)
+      runit (>= 0.0.0)
+      windows (>= 0.0.0)
+      yum (>= 0.0.0)
+
+GIT
+  remote: git://github.com/opscode-cookbooks/java.git
+  ref: master
+  sha: 81d7d7f8f831405af1f42c8bb4230e6456b493be
+  specs:
+    java (1.7.0)
+
+GIT
+  remote: git://github.com/opscode-cookbooks/mysql.git
+  ref: master
+  sha: 1709b1ea22339a0c829cf5ced8c5a7ed4a186615
+  specs:
+    mysql (2.1.0)
+      build-essential (>= 0.0.0)
+      openssl (>= 0.0.0)
+
+GIT
+  remote: git://github.com/opscode-cookbooks/postgresql.git
+  ref: master
+  sha: cdeb1ccca7cfd5564706315a8d95986658b5c300
+  specs:
+    postgresql (2.1.0)
+      openssl (>= 0.0.0)
+
+GIT
+  remote: git://github.com/opscode-cookbooks/vim.git
+  ref: master
+  sha: 88e8d018267d2cd5cfa3260ce55a0025f52dae6f
+  specs:
+    vim (1.0.2)
+
+GIT
+  remote: git://github.com/opscode-cookbooks/zsh.git
+  ref: master
+  sha: 3bff82836677564478ffc90dfb487ffc986702f3
+  specs:
+    zsh (1.0.0)
+
+DEPENDENCIES
+  apt (>= 0)
+  build-essential (>= 0)
+  git (>= 0)
+  java (>= 0)
+  mysql (>= 0)
+  postgresql (>= 0)
+  vim (>= 0)
+  zsh (>= 0)
+
