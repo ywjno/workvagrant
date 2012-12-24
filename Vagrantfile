@@ -13,13 +13,18 @@ Vagrant::Config.run do |config|
         :install_flavor => "oracle",
         :jdk_version => "7",
         :oracle => {
-          "accept_oracle_download_terms" => true
+          :accept_oracle_download_terms => true
         }
       },
       :mysql => {
         :server_root_password => "PASSWORD",
         :server_repl_password => "PASSWORD",
         :server_debian_password => "PASSWORD"
+      },
+      :postgresql => {
+        :password => {
+          :postgres => "PASSWORD"
+        }
       }
     }
 
