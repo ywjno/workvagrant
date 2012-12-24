@@ -2,7 +2,7 @@
 
 It contains `git`, `mysql`, `postgresql`, and `oracle java 7` recipes.
 
-Worked in [Oracle VM VirtualBox 4.1.16](https://www.virtualbox.org/) and [Ubuntu 12.04 LTS](http://www.ubuntu.com/).
+Worked in [Oracle VM VirtualBox 4.2.0](https://www.virtualbox.org/) and [Ubuntu 12.04 LTS](http://www.ubuntu.com/).
 
 ## How to use
 
@@ -17,6 +17,12 @@ rake up
 ```
 
 run `rake -T` find other command.
+
+## Tips
+* If you would add box form local, download box file first, and run
+```bash
+vagrant box add precise32 /path/to/the/precise32.box
+```
 
 ## THANKS
 
