@@ -15,12 +15,12 @@ task :reload do
   system "vagrant reload"
 end
 
-desc "install all chef"
-task :install_chef do
+desc "install all cookbook"
+task :install_cookbook do
   system "librarian-chef install"
 end
 
-desc "update all chef"
-task :update_chef do
+desc "update all cookbook"
+task :update_cookbook do
   system "librarian-chef update"
 end

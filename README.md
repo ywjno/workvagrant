@@ -12,7 +12,7 @@ change ubuntu sources list in `change_sources_list.sh` file FIRST.
 git clone git://github.com/ywjno/workvagrant.git
 cd workvagrant
 bundle install
-rake install_chef
+rake install_cookbook
 rake up
 ```
 
