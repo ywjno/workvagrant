@@ -20,7 +20,12 @@ run `rake -T` find other command.
 
 ## Tips
 * If you would add box form local, download box file first, and run
+
 ```bash
+# win os
+vagrant box add precise32 path:\to\the\precise32.box
+
+#other os
 vagrant box add precise32 /path/to/the/precise32.box
 ```
 
