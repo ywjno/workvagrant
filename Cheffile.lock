@@ -1,20 +1,20 @@
 SITE
   remote: http://community.opscode.com/api/v1
   specs:
-    chef_handler (1.1.2)
+    chef_handler (1.1.4)
     dmg (1.1.0)
     openssl (1.0.0)
     runit (0.16.2)
     windows (1.7.0)
       chef_handler (>= 0.0.0)
-    yum (2.0.6)
+    yum (2.1.0)
 
 GIT
   remote: git://github.com/opscode-cookbooks/apt.git
   ref: master
-  sha: ea834265247cc8b507ac37ab3a34a9b44ed27a11
+  sha: 2194dbb3a991793943f4b9edc0a51ec29cd6b758
   specs:
-    apt (1.7.0)
+    apt (1.8.0)
 
 GIT
   remote: git://github.com/opscode-cookbooks/build-essential.git
@@ -26,7 +26,7 @@ GIT
 GIT
   remote: git://github.com/opscode-cookbooks/git.git
   ref: master
-  sha: f971753d7bac72c4decf2dddda8f9be5289ae324
+  sha: d0eeb663b6172f43787ecf09652e66f4d5c4a7a6
   specs:
     git (2.1.2)
       build-essential (>= 0.0.0)
@@ -38,14 +38,15 @@ GIT
 GIT
   remote: git://github.com/opscode-cookbooks/java.git
   ref: master
-  sha: 81d7d7f8f831405af1f42c8bb4230e6456b493be
+  sha: 92a12d17413e8635cdc06dc535f59f53e63c18d7
   specs:
-    java (1.7.0)
+    java (1.8.0)
+      windows (>= 0.0.0)
 
 GIT
   remote: git://github.com/opscode-cookbooks/mysql.git
   ref: master
-  sha: 1709b1ea22339a0c829cf5ced8c5a7ed4a186615
+  sha: 9c21c166cc9424be88c148d6dec5163bb0c68f01
   specs:
     mysql (2.1.0)
       build-essential (>= 0.0.0)
