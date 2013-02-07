@@ -26,3 +26,6 @@ cookbook 'zsh',
 
 cookbook 'vim',
   :git => 'git://github.com/opscode-cookbooks/vim.git'
+
+cookbook 'ubuntu-change-source-list',
+  :git => 'git://github.com/ywjno/ubuntu-change-source-list.git'

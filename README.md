@@ -6,7 +6,13 @@ Worked in [Oracle VM VirtualBox 4.2.0](https://www.virtualbox.org/) and [Ubuntu 
 
 ## How to use
 
-change ubuntu sources list in `change_sources_list.sh` file FIRST.
+change ubuntu sources list in `node['ubuntu']['mirror_site_url']` FIRST if you would.
+
+```ruby
+:ubuntu => {
+  :mirror_site_url => "YOUR_MIRROR_SITE_URL"
+}
+```
 
 ```bash
 git clone git://github.com/ywjno/workvagrant.git

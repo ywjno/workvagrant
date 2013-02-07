@@ -5,59 +5,59 @@ SITE
     dmg (1.1.0)
     openssl (1.0.0)
     runit (0.16.2)
-    windows (1.7.0)
+    windows (1.8.2)
       chef_handler (>= 0.0.0)
     yum (2.1.0)
 
 GIT
   remote: git://github.com/opscode-cookbooks/apt.git
   ref: master
-  sha: 2194dbb3a991793943f4b9edc0a51ec29cd6b758
+  sha: aa53298d62b4cccdb3bc83690d6c81744c67a7eb
   specs:
-    apt (1.8.0)
+    apt (1.8.4)
 
 GIT
   remote: git://github.com/opscode-cookbooks/build-essential.git
   ref: master
-  sha: 0c636536fb1236f792974f3af38f2950a03ed4b2
+  sha: 9bb5751b6a2ff2aba80b92d7668da561c09f1363
   specs:
-    build-essential (1.3.2)
+    build-essential (1.3.4)
 
 GIT
   remote: git://github.com/opscode-cookbooks/git.git
   ref: master
-  sha: d0eeb663b6172f43787ecf09652e66f4d5c4a7a6
+  sha: 019f580382ae1433e0b0e147afc9cd2447474978
   specs:
-    git (2.1.2)
+    git (2.2.0)
       build-essential (>= 0.0.0)
       dmg (>= 0.0.0)
-      runit (>= 0.0.0)
+      runit (<= 0.16.2)
       windows (>= 0.0.0)
       yum (>= 0.0.0)
 
 GIT
   remote: git://github.com/opscode-cookbooks/java.git
   ref: master
-  sha: 92a12d17413e8635cdc06dc535f59f53e63c18d7
+  sha: fd87806d758b3f498eb261f547d7ca4d2af23023
   specs:
-    java (1.8.0)
+    java (1.9.2)
       windows (>= 0.0.0)
 
 GIT
   remote: git://github.com/opscode-cookbooks/mysql.git
   ref: master
-  sha: 9c21c166cc9424be88c148d6dec5163bb0c68f01
+  sha: f2bf3bd916f432b1b704ca7b0638d0da20f6836d
   specs:
-    mysql (2.1.0)
+    mysql (2.1.2)
       build-essential (>= 0.0.0)
       openssl (>= 0.0.0)
 
 GIT
   remote: git://github.com/opscode-cookbooks/postgresql.git
   ref: master
-  sha: cdeb1ccca7cfd5564706315a8d95986658b5c300
+  sha: 561e74a15139c35321f2ddf2929a824febaa710f
   specs:
-    postgresql (2.1.0)
+    postgresql (2.2.2)
       openssl (>= 0.0.0)
 
 GIT
@@ -70,9 +70,16 @@ GIT
 GIT
   remote: git://github.com/opscode-cookbooks/zsh.git
   ref: master
-  sha: 3bff82836677564478ffc90dfb487ffc986702f3
+  sha: bd5d9266591b4271e437a51eb8a23d2dc5fcaab4
   specs:
     zsh (1.0.0)
+
+GIT
+  remote: git://github.com/ywjno/ubuntu-change-source-list.git
+  ref: master
+  sha: 338a1124d9d89179fb0890eea8124d1485cc7a6d
+  specs:
+    ubuntu-change-source-list (0.1.0)
 
 DEPENDENCIES
   apt (>= 0)
@@ -81,6 +88,7 @@ DEPENDENCIES
   java (>= 0)
   mysql (>= 0)
   postgresql (>= 0)
+  ubuntu-change-source-list (>= 0)
   vim (>= 0)
   zsh (>= 0)
 
