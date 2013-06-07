@@ -4,7 +4,8 @@
 site 'http://community.opscode.com/api/v1'
 
 cookbook 'apt',
-  :git => 'git://github.com/opscode-cookbooks/apt.git'
+  :git => 'git://github.com/opscode-cookbooks/apt.git',
+  :ref => '1.10.0'
 
 cookbook 'build-essential',
   :git => 'git://github.com/opscode-cookbooks/build-essential.git'

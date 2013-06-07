@@ -3,61 +3,65 @@ SITE
   specs:
     chef_handler (1.1.4)
     dmg (1.1.0)
-    openssl (1.0.0)
-    runit (0.16.2)
-    windows (1.8.2)
+    openssl (1.0.2)
+    runit (1.1.4)
+      build-essential (>= 0.0.0)
+      yum (>= 0.0.0)
+    windows (1.9.0)
       chef_handler (>= 0.0.0)
-    yum (2.1.0)
+    yum (2.2.2)
 
 GIT
   remote: git://github.com/opscode-cookbooks/apt.git
-  ref: master
-  sha: aa53298d62b4cccdb3bc83690d6c81744c67a7eb
+  ref: 1.10.0
+  sha: d4b5912cd8f3e73a417b3b176fb85e37b04993fa
   specs:
-    apt (1.8.4)
+    apt (1.10.0)
 
 GIT
   remote: git://github.com/opscode-cookbooks/build-essential.git
   ref: master
-  sha: 9bb5751b6a2ff2aba80b92d7668da561c09f1363
+  sha: df4264aad07d706f3207cb1fe2bbfa03a0b82f31
   specs:
-    build-essential (1.3.4)
+    build-essential (1.4.1)
 
 GIT
   remote: git://github.com/opscode-cookbooks/git.git
   ref: master
-  sha: 019f580382ae1433e0b0e147afc9cd2447474978
+  sha: 5860dd00c470f1bdebf42bf369d9da58029ce9f5
   specs:
-    git (2.2.0)
+    git (2.5.3)
       build-essential (>= 0.0.0)
       dmg (>= 0.0.0)
-      runit (<= 0.16.2)
+      runit (>= 1.0)
       windows (>= 0.0.0)
       yum (>= 0.0.0)
 
 GIT
   remote: git://github.com/opscode-cookbooks/java.git
   ref: master
-  sha: fd87806d758b3f498eb261f547d7ca4d2af23023
+  sha: e20ca6bde2196fef6dddd8c82e79a5dbab03c111
   specs:
-    java (1.9.2)
+    java (1.11.5)
       windows (>= 0.0.0)
 
 GIT
   remote: git://github.com/opscode-cookbooks/mysql.git
   ref: master
-  sha: f2bf3bd916f432b1b704ca7b0638d0da20f6836d
+  sha: 61bda92b46f2eabd59a8e4c3eef4df8096bcf0dc
   specs:
-    mysql (2.1.2)
-      build-essential (>= 0.0.0)
+    mysql (3.0.1)
+      build-essential (> 1.1.0)
       openssl (>= 0.0.0)
 
 GIT
   remote: git://github.com/opscode-cookbooks/postgresql.git
   ref: master
-  sha: 561e74a15139c35321f2ddf2929a824febaa710f
+  sha: 6217a456accac6af21321148681dd1c93b5f3707
   specs:
-    postgresql (2.2.2)
+    postgresql (3.0.1)
+      apt (>= 0.0.0)
+      build-essential (>= 0.0.0)
       openssl (>= 0.0.0)
 
 GIT
@@ -70,16 +74,16 @@ GIT
 GIT
   remote: git://github.com/opscode-cookbooks/zsh.git
   ref: master
-  sha: bd5d9266591b4271e437a51eb8a23d2dc5fcaab4
+  sha: 62b73e14080eefb7fa5244e740eae4aa6d1d361e
   specs:
     zsh (1.0.0)
 
 GIT
   remote: git://github.com/ywjno/ubuntu-change-source-list.git
   ref: master
-  sha: 338a1124d9d89179fb0890eea8124d1485cc7a6d
+  sha: 735aaeb25e58a03d8555013f8aa76bd4e77fc6b1
   specs:
-    ubuntu-change-source-list (0.1.0)
+    ubuntu-change-source-list (0.1304.1)
 
 DEPENDENCIES
   apt (>= 0)
